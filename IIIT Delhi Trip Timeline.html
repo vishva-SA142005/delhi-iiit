@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IIIT Delhi Trip Timeline · 14–23 Oct 2026</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f7fb;--card:#fff;--tx:#1b1f2a;--mu:#6b7280;--ln:#d9dce6;
+--pay:#12a150;--food:#f08c00;--trv:#2f6fed;--stay:#8b5cf6;--evt:#e63e8c;--rst:#8892a6;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#12141b;--card:#1d212c;--tx:#eef0f6;--mu:#9aa3b5;--ln:#343a4b;}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#12141b;--card:#1d212c;--tx:#eef0f6;--mu:#9aa3b5;--ln:#343a4b;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:18px 16px 8px;background:linear-gradient(135deg,#2f6fed,#8b5cf6 55%,#e63e8c);color:#fff}
+header h1{margin:0;font-size:20px}header p{margin:4px 0 0;font-size:13px;opacity:.9}
+.leg{display:flex;flex-wrap:wrap;gap:6px;padding:10px 12px}
+.leg span{font-size:12px;padding:3px 9px;border-radius:99px;color:#fff;font-weight:600}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:8px;overflow-x:auto;padding:8px 12px;border-bottom:1px solid var(--ln)}
+.tabs button{flex:0 0 auto;border:1px solid var(--ln);background:var(--card);color:var(--tx);border-radius:12px;padding:6px 12px;font:inherit;font-size:13px;text-align:center}
+.tabs button b{display:block;font-size:16px}
+.tabs button.on{background:var(--trv);color:#fff;border-color:var(--trv)}
+main{padding:12px;max-width:640px;margin:auto}
+.dh{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin-bottom:4px}
+.dh h2{margin:0;font-size:18px}.dh small{color:var(--mu)}
+.tot{background:var(--pay);color:#fff;border-radius:12px;padding:6px 12px;text-align:right;font-size:12px}
+.tot b{display:block;font-size:18px}
+.note{font-size:12px;color:var(--mu);margin:6px 0 14px}
+.row{display:flex;gap:10px}
+.tm{width:74px;flex:0 0 74px;text-align:right;font-weight:700;font-size:13px;padding-top:10px;font-variant-numeric:tabular-nums}
+.tm i{display:block;font-style:normal;font-weight:500;font-size:10px;color:var(--mu)}
+.sp{position:relative;width:16px;flex:0 0 16px}
+.sp:before{content:"";position:absolute;left:7px;top:0;bottom:0;width:2px;background:var(--ln)}
+.sp u{position:absolute;left:1px;top:14px;width:14px;height:14px;border-radius:50%;border:3px solid var(--card);box-shadow:0 0 0 2px currentColor;background:currentColor}
+.cd{flex:1;background:var(--card);border-left:5px solid currentColor;border-radius:12px;padding:9px 11px;margin:5px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);min-width:0}
+.cd .t{color:var(--tx);overflow-wrap:anywhere}
+.cd .ic{margin-right:5px}
+.am{display:inline-block;margin-top:5px;background:var(--pay);color:#fff;font-weight:700;border-radius:8px;padding:2px 9px;font-size:14px}
+.am.q{background:transparent;color:var(--pay);border:1.5px dashed var(--pay)}
+.tg{font-size:10px;color:var(--mu);margin-left:6px}
+.c-pay{color:var(--pay)}.c-food{color:var(--food)}.c-trv{color:var(--trv)}.c-stay{color:var(--stay)}.c-evt{color:var(--evt)}.c-rst{color:var(--rst)}
+footer{padding:16px;font-size:12px;color:var(--mu);text-align:center}
+</style>
+</head>
+<body>
+<header><h1>🚆 IIIT Delhi Trip Timeline</h1><p>14 – 23 October 2026 · 6:00 AM → 11:00 PM each day</p></header>
+<div class="leg">
+<span style="background:var(--pay)">💰 Payment</span><span style="background:var(--food)">🍽️ Food</span><span style="background:var(--trv)">🚆 Travel</span><span style="background:var(--stay)">🏨 Stay</span><span style="background:var(--evt)">🎯 Event</span><span style="background:var(--rst)">😴 Rest</span>
+</div>
+<div class="tabs" id="tabs"></div>
+<main id="main"></main>
+<footer>Times with ✓ are written in your notes. All other minute-level times are planned estimates. Amounts with “?” need checking and are not added to totals.</footer>
+<script>
+// [time, cat, text, amount, flags]  flags: n = time from notes, q = uncertain amount
+var D=[
+{d:"14",w:"Wed",t:"Departure & train",a:[
+["06:15","r","Wake up, get ready"],["07:30","f","Breakfast / morning tiffin"],["09:00","r","Pack luggage, check train ticket"],["12:30","f","Lunch before leaving"],["14:00","t","Final packing, leave for railway station"],["15:00","r","Wait at lounge / waiting room (3–5 PM)","","n"],["17:10","p","Water bottle, cake & pastry",0],["18:00","t","Train departs (6 PM train). Notes also say “11 PM ticket” – verify","","n"],["22:30","r","Rest on the train"]]},
+{d:"15",w:"Thu",t:"Train journey",a:[
+["06:30","f","Morning refreshment on train"],["08:00","t","Train journey continues"],["12:45","f","Lunch on the train"],["17:15","f","Evening snacks"],["20:30","p","Deepak – Swiggy dinner order (night)",0],["22:00","r","Rest on the train"]]},
+{d:"16",w:"Fri",t:"Arrive Delhi, check-in, Metro & Mall",a:[
+["06:30","t","Arrive Delhi, collect luggage"],["07:20","p","Railway-station breakfast / puri",240],["08:45","p","Morning food entry",1150],["09:20","t","Travel to hotel / room"],["10:00","s","Hotel room arrangement","","n"],["10:30","p","Room payment to Mahesh",500],["11:15","r","Freshen up"],["12:40","p","Lunch",820],["13:30","t","Metro to college / Delhi Metro visit"],["15:40","p","Afternoon food entry",980],["17:00","e","Delhi Reliance Mall visit"],["19:15","t","Return to hotel"],["20:15","p","Dinner via Swiggy to room",675],["22:00","r","Rest, prepare for next day"]]},
+{d:"17",w:"Sat",t:"College & event day",a:[
+["06:00","r","Wake up, get ready"],["06:40","p","Morning tiffin / breakfast",700],["07:15","t","Cab to college"],["07:50","e","Reach venue, entry / registration"],["08:30","e","Event begins","","n"],["12:20","p","Lunch at college",820],["13:15","e","Event continues"],["17:00","t","Return travel"],["18:00","r","Evening refreshment, personal time"],["19:10","p","Dinner at college",600],["20:15","s","Back at accommodation"],["20:45","p","Room payment (2 rooms) – verify",4200,"q"],["22:00","r","Rest"]]},
+{d:"18",w:"Sun",t:"Full-day hackathon",a:[
+["06:30","r","Wake up, report for hackathon"],["07:30","f","Breakfast / tiffin"],["08:30","e","Hackathon starts"],["12:30","f","Lunch break"],["17:30","f","Tea / evening break"],["20:15","p","College food – afternoon bill",830],["21:10","p","College dinner bill (written total ₹1,420)",590],["22:15","s","Return to room, rest"]]},
+{d:"19",w:"Mon",t:"College, Metro & rooms",a:[
+["06:30","r","Wake up, get ready"],["07:30","p","College morning food",775],["08:30","e","College activities"],["12:30","p","TN lunch",1060],["15:00","t","Metro journey / return"],["17:15","s","Back at accommodation"],["18:20","p","Room 1 payment",4800],["18:30","p","Room 2 payment",4800],["19:30","p","Dinner",780],["20:30","r","Organise Delhi / Agra bills"],["22:00","r","Rest for Taj Mahal day"]]},
+{d:"20",w:"Tue",t:"Taj Mahal / Agra",a:[
+["06:15","r","Wake up, get ready"],["07:15","p","Morning tiffin",540],["08:00","t","Travel to Agra / Taj entry"],["09:30","e","Taj Mahal visit / booking","","n"],["12:15","t","After-visit onward travel"],["13:20","p","Lunch / afternoon food",755],["14:30","e","Agra visit continues"],["15:20","t","Further travel / entry (activity unclear)","","n"],["16:10","p","Second afternoon food entry",720],["17:30","t","Return journey"],["18:30","p","Mahesh – accommodation ref. (may repeat)",4800,"q"],["19:40","p","Dinner",570],["20:45","r","Organise receipts"],["22:00","r","Rest"]]},
+{d:"21",w:"Wed",t:"Pack & leave Delhi",a:[
+["06:15","r","Wake up, prepare luggage"],["07:20","p","Morning tiffin",550],["08:30","r","Pack, check tickets"],["11:45","f","Arrange lunch parcel"],["13:10","p","Afternoon lunch food",790],["13:25","p","Parcel amount (separate note – verify)",770,"q"],["14:30","s","Room checkout, go to station"],["15:50","p","Water bottle & snacks",0,"n"],["16:00","t","Train departs (return)","","n"],["20:15","f","Dinner on train"],["22:00","r","Rest on the train"]]},
+{d:"22",w:"Thu",t:"Return train & Swiggy",a:[
+["06:30","r","Wake up on the train"],["07:45","f","Breakfast / tiffin"],["12:40","f","Lunch on the train"],["17:15","f","Evening snacks"],["20:10","p","Biryani – 3 orders (Swiggy)",0],["21:15","p","Chicken rice – 2 orders (Swiggy)",0],["22:15","p","1 dosa + 1 roll",0]]},
+{d:"23",w:"Fri",t:"Reach Chennai / Katpadi",a:[
+["06:30","f","Breakfast on the train"],["08:00","t","Train towards Chennai / Katpadi"],["12:45","f","Lunch if needed"],["17:30","t","Reach destination station (check real timetable)"],["19:00","t","Onward travel, home"],["21:00","r","Trip ends 🎉 Keep receipts safe"]]}
+];
+var IC={p:"💰",f:"🍽️",t:"🚆",s:"🏨",e:"🎯",r:"😴"},CL={p:"pay",f:"food",t:"trv",s:"stay",e:"evt",r:"rst"};
+function fm(s){var h=+s.slice(0,2),m=s.slice(3),ap=h>=12?"PM":"AM";h=h%12||12;return h+":"+m+" "+ap}
+function inr(n){return "₹"+n.toLocaleString("en-IN")}
+function show(i){
+ var x=D[i],tot=0,h="";
+ x.a.forEach(function(r){if(r[3]&&r[4]!=="q")tot+=r[3]});
+ var tabs=document.querySelectorAll("#tabs button");tabs.forEach(function(b,j){b.className=j===i?"on":""});
+ h+='<div class="dh"><div><h2>'+x.t+'</h2><small>'+x.w+', '+x.d+' Oct 2026</small></div>'+(tot?'<div class="tot">Noted spend<b>'+inr(tot)+'</b></div>':'')+'</div>';
+ h+='<div class="note">Timeline 6:00 AM – 11:00 PM</div>';
+ h+='<div class="row"><div class="tm">6:00 AM</div><div class="sp"></div></div>';
+ x.a.forEach(function(r){
+  var c=CL[r[1]],am="";
+  if(r[1]==="p")am=r[3]?'<div><span class="am'+(r[4]==="q"?" q":"")+'">'+inr(r[3])+(r[4]==="q"?" ?":"")+'</span></div>':'<div><span class="am q">amount not noted</span></div>';
+  h+='<div class="row c-'+c+'"><div class="tm">'+fm(r[0])+'<i>'+(r[4]==="n"?"✓ from notes":"")+'</i></div><div class="sp"><u></u></div><div class="cd"><div class="t"><span class="ic">'+IC[r[1]]+'</span>'+r[2]+'</div>'+am+'</div></div>';
+ });
+ h+='<div class="row"><div class="tm">11:00 PM</div><div class="sp"></div></div>';
+ document.getElementById("main").innerHTML=h;window.scrollTo(0,0);
+}
+var tb=document.getElementById("tabs");
+D.forEach(function(x,i){var b=document.createElement("button");b.innerHTML=x.w+"<b>"+x.d+"</b>";b.onclick=function(){show(i)};tb.appendChild(b)});
+show(2);
+</script>
+</body>
+</html>
